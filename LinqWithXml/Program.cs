@@ -29,6 +29,11 @@ namespace LinqWithXml
                                 <Age>17</Age>
                                 <University>Modern Academy</University>
                               </Student>
+                              <Student>
+                                <Name>Mina</Name>
+                                <Age>20</Age>
+                                <University>Guc</University>
+                              </Student>
                              </Students>";
 
             XDocument studentsXdoc = new XDocument();
