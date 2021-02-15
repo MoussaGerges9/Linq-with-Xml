@@ -52,6 +52,17 @@ namespace LinqWithXml
                 Console.WriteLine("Student Name: {0}, Age: {1}, University: {2}", student.Name, student.Age, student.University);
             }
 
+            Console.WriteLine();
+
+            var sortedStudents = from student in students
+                orderby student.Age
+                select student;
+
+            foreach (var student in sortedStudents)
+            {
+                Console.WriteLine("Student Name: {0}, Age: {1}, University: {2}", student.Name, student.Age, student.University);
+            }
+
             Console.ReadKey();
         }
     }
